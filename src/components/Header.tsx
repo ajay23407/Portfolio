@@ -38,7 +38,7 @@ const Header = () => {
           <div className={`text-2xl font-bold transition-colors duration-300 ${
             isScrolled ? 'text-white' : 'text-white'
           }`}>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Dev</span>Portfolio
+            <span className="text-transparent bg-clip-text bg-gradient-to-r "></span>Ajay Yadav
           </div>
           
           {/* Desktop Navigation */}

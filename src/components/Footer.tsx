@@ -6,17 +6,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <Github size={24} />,
-      href: 'https://github.com',
+      href: "https://github.com/ajay23407",
       label: 'GitHub'
     },
     {
       icon: <Linkedin size={24} />,
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/ajay-yadav-999b691ab/',
       label: 'LinkedIn'
     },
     {
       icon: <Mail size={24} />,
-      href: 'mailto:alex.johnson@example.com',
+      href: 'Ay9771476@gmail.com',
       label: 'Email'
     }
   ];
@@ -33,7 +33,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Dev</span>Portfolio
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Ajay</span>Yadav
             </div>
             <p className="text-purple-200 leading-relaxed">
               Full-Stack MERN Developer passionate about creating scalable 
@@ -66,9 +66,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
             <div className="space-y-2 text-purple-200">
-              <p>San Francisco, CA</p>
-              <p>alex.johnson@example.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>Mumbai-67</p>
+              <p>Ay9771476@gmail.com</p>
+              
             </div>
           </div>
         </div>

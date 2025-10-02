@@ -31,15 +31,6 @@ const Projects = () => {
       date: 'Dec 2024'
     },
     {
-      title: 'Social Media Dashboard',
-      description: 'Real-time social media analytics dashboard built with the MERN stack. Includes data visualization, user engagement metrics, and automated reporting features.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Chart.js', 'Socket.io'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
-      date: 'Nov 2024'
-    },
-    {
       title: 'Task Management App',
       description: 'Collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -57,24 +48,7 @@ const Projects = () => {
       githubUrl: 'https://github.com',
       date: 'Sep 2024'
     },
-    {
-      title: 'Real Estate Platform',
-      description: 'Modern real estate platform with property listings, advanced search filters, virtual tours, and integrated map functionality.',
-      image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Mapbox', 'Cloudinary', 'Express'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
-      date: 'Aug 2024'
-    },
-    {
-      title: 'Weather Analytics App',
-      description: 'Weather forecasting application with historical data analysis, interactive charts, and location-based weather alerts.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'TypeScript', 'Node.js', 'OpenWeather API', 'D3.js', 'MongoDB'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
-      date: 'Jul 2024'
-    }
+    
   ];
 
   return (

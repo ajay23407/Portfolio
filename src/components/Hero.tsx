@@ -1,6 +1,7 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { useEffect, useState } from 'react';
-
+// import backgroundAnim from '../animations/background.json';
+// import Lottie from 'lottie-react';
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -18,8 +19,15 @@ const Hero = () => {
   return (
     <section
   id="hero"
-  className="min-h-screen flex items-center justify-center bg-gradient-to-br bg-violet-950  relative overflow-hidden"
+  className="min-h-screen flex items-center justify-center bg-gradient-to-br bg-black relative overflow-hidden"
 >
+  {/* <Lottie
+          animationData={backgroundAnim}
+          loop
+          autoplay
+          className="absolute inset-0 w-full h-full "
+        /> */}
+  
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -37,11 +45,19 @@ const Hero = () => {
           <div className="flex-shrink-0 flex justify-center md:justify-end order-1 md:order-2 mb-8 md:mb-0 mt-16 md:mt-0">
   <div className="w-40 h-40 md:w-64 md:h-64 relative">
     <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-spin-slow"></div>
-    <img
+    {/* <img
       src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
       alt="Ajay Yadav"
       className="w-full h-full rounded-full object-cover border-4 border-white/20 relative z-10 animate-float"
-    />
+    /> */}
+    <div
+  className="w-full h-full flex items-center justify-center rounded-full 
+             bg-gradient-to-r from-purple-600 to-pink-600 
+             text-white text-4xl font-bold border-4 border-white/20 
+             relative z-10 animate-float"
+>
+  AY
+</div>
   </div>
 </div>
 

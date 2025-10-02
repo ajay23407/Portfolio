@@ -45,19 +45,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      detail: 'alex.johnson@example.com',
-      link: 'mailto:alex.johnson@example.com'
+      detail: 'Ay9771476@gmail.com',
+      link: 'Ay9771476@gmail.com'
     },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: 'Phone',
-      detail: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
-    },
+    // {
+    //   icon: <Phone className="w-6 h-6" />,
+    //   title: 'Phone',
+    //   detail: '+91 9004057958',
+      
+    // },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
-      detail: 'San Francisco, CA',
+      detail: 'Mumbai-67',
       link: null
     }
   ];
