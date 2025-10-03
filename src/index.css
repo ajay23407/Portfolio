@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @keyframes slide-up {
   from {
     opacity: 0;

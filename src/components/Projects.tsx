@@ -136,7 +136,7 @@ const Projects = () => {
 
         <div className="text-center mt-16">
           <a
-            href="https://github.com"
+            href="https://github.com/ajay23407"
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex items-center bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 font-medium shadow-lg hover:shadow-purple-500/25 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}

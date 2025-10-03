@@ -34,7 +34,7 @@ const Skills = () => {
       title: "Database & Tools",
       gradient: "from-pink-500 to-purple-500",
       glow: "shadow-[0_0_30px_rgba(236,72,153,0.7)]",
-      skills: ["MongoDB", "Git/GitHub"],
+      skills: ["MongoDB", "Git/GitHub","Postman","VS Code","vercel"],
     },
   ];
 

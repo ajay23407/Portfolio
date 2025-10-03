@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 
 function App() {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -79,6 +80,7 @@ function App() {
     <div className="min-h-screen bg-black text-white">
       <Header />
       <Hero />
+      <Experience />
       <About />
       <Skills />
       <Projects />
