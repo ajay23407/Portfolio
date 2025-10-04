@@ -1,6 +1,8 @@
-import { Code, Database, Server, Globe } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import Lottie from 'lottie-react';
+"use client";
+import { useEffect, useState } from "react";
+import { Code2, Paintbrush, Brain, Gamepad2 } from "lucide-react";
+import Lottie from "lottie-react";
+import creativeAnim from "../animations/creative.json"; // you can replace this with any Lottie file
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,103 +12,82 @@ const About = () => {
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.1 }
+      { threshold: 0.2 }
     );
-
-    const element = document.getElementById('about');
+    const element = document.getElementById("about");
     if (element) observer.observe(element);
-
     return () => observer.disconnect();
   }, []);
 
-  const highlights = [
+  const traits = [
     {
-      icon: <Code className="w-10 h-10" />,
-      title: 'Frontend Development',
-      description: 'React, Tailwind CSS',
+      icon: <Code2 className="w-8 h-8 text-purple-400" />,
+      title: "Frontend Developer",
+      desc: "Building smooth, responsive, and modern UIs using React & Tailwind CSS.",
     },
     {
-      icon: <Server className="w-10 h-10" />,
-      title: 'Backend Development',
-      description: 'Node.js, Express.js, RESTful APIs',
+      icon: <Paintbrush className="w-8 h-8 text-pink-400" />,
+      title: "Sketch Artist",
+      desc: "I love sketching anime and realistic portraits — where imagination meets detail.",
     },
     {
-      icon: <Database className="w-10 h-10" />,
-      title: 'Database Management',
-      description: 'MongoDB, Mongoose',
+      icon: <Brain className="w-8 h-8 text-blue-400" />,
+      title: "AI & Data Science Student",
+      desc: "Exploring the intersection of data, intelligence, and creativity.",
     },
     {
-      icon: <Globe className="w-10 h-10" />,
-      title: 'Full-Stack Integration',
-      description: 'MERN Stack, Authentication, Deployment',
+      icon: <Gamepad2 className="w-8 h-8 text-green-400" />,
+      title: "Gamer by Passion",
+      desc: " games inspire my sense of design and strategy.",
     },
   ];
 
   return (
     <section
       id="about"
-      className="relative overflow-hidden min-h-screen bg-gray-900"
+      className="relative overflow-hidden bg-gradient-to-b from-gray-900 to-black text-white py-24"
     >
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-transparent -z-10"></div>
+      {/* Background animation */}
+      <div className="absolute inset-0 opacity-30 -z-10">
+        <Lottie animationData={creativeAnim} loop autoplay />
+      </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        {/* Section Heading */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-16">
+        {/* Left side: animation / image */}
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`w-full lg:w-1/2 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            About Me
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+          <Lottie animationData={creativeAnim} loop autoplay />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Side: Text */}
-          <div
-            className={`transition-all duration-1000 delay-200 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
-            }`}
-          >
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-              Passionate Full-Stack Developer
-            </h3>
-            <div className="space-y-6 text-purple-200 text-lg leading-relaxed">
-              <p>
-                With over 1 years of experience in web development, I specialize in building
-                robust and scalable applications using the MERN stack. My journey started with
-                a curiosity for how things work on the web, which evolved into a passion for
-                creating seamless digital experiences.
-              </p>
-              <p>
-                When I'm not coding, I contribute to open-source projects, mentor junior
-                developers, and explore new technologies to enhance my development toolkit.
-              </p>
-            </div>
-          </div>
+        {/* Right side: text */}
+        <div
+          className={`w-full lg:w-1/2 transition-all duration-1000 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
+            Creativity Meets Code
+          </h2>
+          <p className="text-lg text-purple-100 mb-8 leading-relaxed">
+            I’m <span className="text-pink-400 font-semibold">Ajay Yadav</span> — a
+            developer who believes creativity and technology go hand in hand. Whether
+            it’s building elegant web apps with React or sketching my favorite anime
+            characters, I love transforming ideas into reality.
+          </p>
 
-          {/* Right Side: Highlights */}
-          <div
-            className={`grid grid-cols-1 md:grid-cols-2 gap-6 transition-all duration-1000 delay-400 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
-            }`}
-          >
-            {highlights.map((item, index) => (
+          <div className="grid sm:grid-cols-2 gap-6">
+            {traits.map((item, i) => (
               <div
-                key={index}
-                className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-purple-500/20
-                           hover:shadow-lg hover:shadow-purple-500/30 transition-transform duration-300
-                           transform hover:-translate-y-2 hover:scale-105"
-                style={{ animationDelay: `${index * 100}ms` }}
+                key={i}
+                className="bg-gray-800/40 p-6 rounded-2xl border border-purple-500/10 backdrop-blur-sm 
+                hover:shadow-lg hover:shadow-purple-500/30 transition-transform transform hover:-translate-y-2"
               >
-                <div className="text-purple-400 mb-4 transform transition-transform duration-300 hover:scale-110">
-                  {item.icon}
-                </div>
-                <h4 className="text-white font-semibold mb-2">{item.title}</h4>
-                <p className="text-purple-200 text-sm">{item.description}</p>
+                <div className="mb-3">{item.icon}</div>
+                <h4 className="font-semibold text-white mb-1">{item.title}</h4>
+                <p className="text-sm text-purple-200">{item.desc}</p>
               </div>
             ))}
           </div>
