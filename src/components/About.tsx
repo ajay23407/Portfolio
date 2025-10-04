@@ -20,11 +20,11 @@ const About = () => {
   }, []);
 
   const traits = [
-    {
-      icon: <Code2 className="w-8 h-8 text-purple-400" />,
-      title: "Frontend Developer",
-      desc: "Building smooth, responsive, and modern UIs using React & Tailwind CSS.",
-    },
+   {
+  icon: <Code2 className="w-8 h-8 text-emerald-400" />,
+  title: "MERN Stack Developer",
+  desc: "Crafting dynamic, full-stack web applications with MongoDB, Express.js, React, and Node.js.",
+},
     {
       icon: <Paintbrush className="w-8 h-8 text-pink-400" />,
       title: "Sketch Artist",
