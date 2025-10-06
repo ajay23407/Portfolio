@@ -31,12 +31,12 @@ const Projects = () => {
       date: 'Dec 2024'
     },
     {
-      title: 'Task Management App',
+      title: 'Placement Portal',
       description: 'Collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'WebSockets'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB','Tailwind CSS'],
+      liveUrl: 'https://placementt-portal.vercel.app/',
+      githubUrl: 'https://github.com/ajay23407/Placement-portal',
       date: 'Oct 2024'
     },
     {
