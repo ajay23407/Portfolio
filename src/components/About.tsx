@@ -1,8 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Code2, Paintbrush, Brain, Gamepad2 } from "lucide-react";
-import Lottie from "lottie-react";
-import creativeAnim from "../animations/creative.json"; // you can replace this with any Lottie file
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,11 +19,11 @@ const About = () => {
   }, []);
 
   const traits = [
-   {
-  icon: <Code2 className="w-8 h-8 text-emerald-400" />,
-  title: "MERN Stack Developer",
-  desc: "Crafting dynamic, full-stack web applications with MongoDB, Express.js, React, and Node.js.",
-},
+    {
+      icon: <Code2 className="w-8 h-8 text-emerald-400" />,
+      title: "MERN Stack Developer",
+      desc: "Crafting dynamic, full-stack web applications with MongoDB, Express.js, React, and Node.js.",
+    },
     {
       icon: <Paintbrush className="w-8 h-8 text-pink-400" />,
       title: "Sketch Artist",
@@ -38,7 +37,7 @@ const About = () => {
     {
       icon: <Gamepad2 className="w-8 h-8 text-green-400" />,
       title: "Gamer by Passion",
-      desc: " games inspire my sense of design and strategy.",
+      desc: "Games inspire my sense of design and strategy.",
     },
   ];
 
@@ -47,22 +46,32 @@ const About = () => {
       id="about"
       className="relative overflow-hidden bg-gradient-to-b from-gray-900 to-black text-white py-24"
     >
-      {/* Background animation */}
+      {/* Background Animation */}
       <div className="absolute inset-0 opacity-30 -z-10">
-        <Lottie animationData={creativeAnim} loop autoplay />
+        <DotLottieReact
+          src="https://lottie.host/efc9a73a-5e38-4d2a-b4b6-427d9ad93dcc/SjW4oQxmjO.lottie"
+          loop
+          autoplay
+        />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-16">
-        {/* Left side: animation / image */}
+        {/* Left Animation (Bigger Size) */}
         <div
-          className={`w-full lg:w-1/2 transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+          className={`w-full lg:w-1/2 flex justify-center transition-all duration-1000 ${
+            isVisible ? "opacity-100 scale-105 translate-x-0" : "opacity-0 scale-90 -translate-x-10"
           }`}
         >
-          <Lottie animationData={creativeAnim} loop autoplay />
+          <div className="w-[400px] h-[400px] md:w-[500px] md:h-[500px] lg:w-[500px] lg:h-[500px]">
+            <DotLottieReact
+              src="https://lottie.host/efc9a73a-5e38-4d2a-b4b6-427d9ad93dcc/SjW4oQxmjO.lottie"
+              loop
+              autoplay
+            />
+          </div>
         </div>
 
-        {/* Right side: text */}
+        {/* Right Content */}
         <div
           className={`w-full lg:w-1/2 transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
