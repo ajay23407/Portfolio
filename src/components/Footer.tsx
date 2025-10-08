@@ -26,7 +26,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-12 relative overflow-hidden">
+    <footer className="bg-black text-white py-12 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
